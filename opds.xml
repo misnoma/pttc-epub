@@ -3,13 +3,35 @@
   <id>urn:uuid:pttc-epub-opds-catalog</id>
   <title>Passport to the Cosmos: A New You Tomorrow</title>
   <subtitle>Development builds and compiled EPUB releases</subtitle>
-  <updated>2026-10-07T09:42:36Z</updated>
+  <updated>2026-10-07T16:47:17Z</updated>
   <author>
     <name>James Walker Reid &amp; Julian Jahanpour</name>
     <uri>https://newyoumusical.com</uri>
   </author>
   <link rel="self" href="https://misnoma.github.io/pttc-epub/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" />
   <link rel="start" href="https://misnoma.github.io/pttc-epub/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" />
+  <entry>
+    <title>Passport to the Cosmos: A New You Tomorrow (draft-1007_1647)</title>
+    <id>urn:github:release:misnoma:pttc-epub:draft-1007_1647</id>
+    <updated>2026-10-07T16:47:17Z</updated>
+    <published>2026-10-07T16:47:17Z</published>
+    <author>
+      <name>James Walker Reid &amp; Julian Jahanpour</name>
+    </author>
+    <summary>Compiled draft build draft-1007_1647 containing 7 chapter(s).</summary>
+    <content type="text">Compiled EPUB build containing 7 chapter(s):
+
+- chapter_01.md
+- chapter_02.md
+- chapter_03.md
+- chapter_04.md
+- chapter_05.md
+- chapter_06.md
+- chapter_07.md</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://github.com/misnoma/pttc-epub/releases/download/draft-1007_1647/novel_1007_1647.epub" type="application/epub+zip" title="Download EPUB" />
+    <link rel="http://opds-spec.org/image" href="https://misnoma.github.io/pttc-epub/cover.jpg" type="image/jpeg" />
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://misnoma.github.io/pttc-epub/cover.jpg" type="image/jpeg" />
+  </entry>
   <entry>
     <title>Passport to the Cosmos: A New You Tomorrow (draft-1007_0942)</title>
     <id>urn:github:release:misnoma:pttc-epub:draft-1007_0942</id>
