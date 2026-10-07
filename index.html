@@ -181,6 +181,46 @@
         setTimeout(() => { btn.innerText = 'Copy'; }, 2000);
       });
     }
+
+    fetch('opds.xml')
+      .then(res => res.text())
+      .then(xmlStr => {
+        const parser = new DOMParser();
+        const xml = parser.parseFromString(xmlStr, 'text/xml');
+        const entries = xml.getElementsByTagName('entry');
+        if (entries.length > 0) {
+          const list = document.getElementById('release-list');
+          list.innerHTML = '';
+          for (let i = 0; i < entries.length; i++) {
+            const entry = entries[i];
+            const title = entry.getElementsByTagName('title')[0]?.textContent || 'EPUB Release';
+            const updated = entry.getElementsByTagName('updated')[0]?.textContent || '';
+            const summary = entry.getElementsByTagName('summary')[0]?.textContent || '';
+            let downloadUrl = '';
+            const links = entry.getElementsByTagName('link');
+            for (let j = 0; j < links.length; j++) {
+              if (links[j].getAttribute('rel') === 'http://opds-spec.org/acquisition') {
+                downloadUrl = links[j].getAttribute('href');
+                break;
+              }
+            }
+            if (downloadUrl) {
+              const div = document.createElement('div');
+              div.className = 'release-item';
+              const dateStr = updated ? new Date(updated).toLocaleDateString() : '';
+              div.innerHTML = `
+                <div>
+                  <strong>${title}</strong>
+                  <div style="font-size: 0.8rem; color: #8b949e;">${summary} ${dateStr ? '&bull; ' + dateStr : ''}</div>
+                </div>
+                <a href="${downloadUrl}">Download EPUB</a>
+              `;
+              list.appendChild(div);
+            }
+          }
+        }
+      })
+      .catch(err => console.log('Could not load entries from opds.xml', err));
   </script>
 </body>
 </html>
