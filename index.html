@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passport to the Cosmos: A New You Tomorrow — EPUB Editions</title>
+  <link rel="alternate" type="application/atom+xml;profile=opds-catalog;kind=acquisition" title="OPDS Feed" href="opds.xml">
+  <style>
+    :root {
+      --bg: #0d1117;
+      --card-bg: #161b22;
+      --border: #30363d;
+      --text: #c9d1d9;
+      --text-bright: #f0f6fc;
+      --accent: #58a6ff;
+      --accent-hover: #79c0ff;
+      --badge-bg: #21262d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 680px;
+      width: 100%;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .cover-wrap {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    .cover-wrap img {
+      max-width: 240px;
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      color: var(--text-bright);
+      font-size: 1.6rem;
+      font-weight: 700;
+      text-align: center;
+      margin-bottom: 0.25rem;
+    }
+    .authors {
+      text-align: center;
+      color: #8b949e;
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+    }
+    .box {
+      background: var(--badge-bg);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+    .box h2 {
+      font-size: 1.1rem;
+      color: var(--text-bright);
+      margin-bottom: 0.5rem;
+    }
+    .feed-input-group {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    input.feed-url {
+      flex: 1;
+      background: #0d1117;
+      border: 1px solid var(--border);
+      color: var(--accent);
+      padding: 0.5rem 0.75rem;
+      border-radius: 6px;
+      font-family: monospace;
+      font-size: 0.85rem;
+    }
+    button.copy-btn {
+      background: var(--accent);
+      color: #0d1117;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+      font-size: 0.85rem;
+    }
+    button.copy-btn:hover {
+      background: var(--accent-hover);
+    }
+    ol {
+      margin-left: 1.25rem;
+      margin-top: 0.5rem;
+      font-size: 0.9rem;
+    }
+    li { margin-bottom: 0.35rem; }
+    .releases h2 {
+      font-size: 1.1rem;
+      color: var(--text-bright);
+      margin-bottom: 0.75rem;
+    }
+    .release-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 0;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .release-item a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .release-item a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      text-align: center;
+      margin-top: 1.5rem;
+      font-size: 0.8rem;
+      color: #8b949e;
+    }
+    footer a { color: #8b949e; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="cover-wrap">
+        <img src="cover.jpg" alt="Passport to the Cosmos Cover">
+      </div>
+      <h1>Passport to the Cosmos</h1>
+      <p class="authors">A New You Tomorrow &bull; by James Walker Reid &amp; Julian Jahanpour</p>
+
+      <div class="box">
+        <h2>OPDS Catalog Feed</h2>
+        <p style="font-size: 0.9rem;">Add this feed URL to your iPad reader (Bookshelves, Panels, Yomu, MapleRead, Foliate, etc.):</p>
+        <div class="feed-input-group">
+          <input type="text" class="feed-url" id="feedUrl" value="https://misnoma.github.io/pttc-epub/opds.xml" readonly>
+          <button class="copy-btn" onclick="copyFeedUrl()">Copy</button>
+        </div>
+        <ol>
+          <li>Open your e-reader app on iPad and tap <strong>Add OPDS Catalog</strong>.</li>
+          <li>Paste the URL above (no username or password needed).</li>
+          <li>Browse and download new chapter compilations automatically.</li>
+        </ol>
+      </div>
+
+      <div class="releases">
+        <h2>Download Releases</h2>
+        <div id="release-list">
+          <p style="font-size: 0.85rem; color: #8b949e;">Browse all releases and assets on <a href="https://github.com/misnoma/pttc-epub/releases" target="_blank" rel="noopener">GitHub Releases</a>.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      &copy; Contenu Cl&eacute; Inc &bull; <a href="https://newyoumusical.com" target="_blank" rel="noopener">newyoumusical.com</a> &bull; <a href="https://github.com/misnoma/pttc-epub" target="_blank" rel="noopener">GitHub Repository</a>
+    </footer>
+  </div>
+  <script>
+    function copyFeedUrl() {
+      const urlInput = document.getElementById('feedUrl');
+      urlInput.select();
+      navigator.clipboard.writeText(urlInput.value).then(() => {
+        const btn = document.querySelector('.copy-btn');
+        btn.innerText = 'Copied!';
+        setTimeout(() => { btn.innerText = 'Copy'; }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>

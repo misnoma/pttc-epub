@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"
+      xmlns:dc="http://purl.org/dc/elements/1.1/"
+      xmlns:opds="http://opds-spec.org/2010/catalog">
+  <id>urn:uuid:pttc-epub-opds-catalog</id>
+  <title>Passport to the Cosmos: A New You Tomorrow</title>
+  <subtitle>Development builds and compiled EPUB releases</subtitle>
+  <updated>2026-10-07T14:48:50Z</updated>
+  <author>
+    <name>James Walker Reid &amp; Julian Jahanpour</name>
+    <uri>https://newyoumusical.com</uri>
+  </author>
+  <link rel="self"
+        href="https://misnoma.github.io/pttc-epub/opds.xml"
+        type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+  <link rel="start"
+        href="https://misnoma.github.io/pttc-epub/opds.xml"
+        type="application/atom+xml;profile=opds-catalog;kind=acquisition"/>
+</feed>
