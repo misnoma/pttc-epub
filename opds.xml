@@ -3,13 +3,35 @@
   <id>urn:uuid:pttc-epub-opds-catalog</id>
   <title>Passport to the Cosmos: A New You Tomorrow</title>
   <subtitle>Development builds and compiled EPUB releases</subtitle>
-  <updated>2026-10-20T13:52:44Z</updated>
+  <updated>2026-10-20T14:04:33Z</updated>
   <author>
     <name>James Walker Reid &amp; Julian Jahanpour</name>
     <uri>https://newyoumusical.com</uri>
   </author>
   <link rel="self" href="https://misnoma.github.io/pttc-epub/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" />
   <link rel="start" href="https://misnoma.github.io/pttc-epub/opds.xml" type="application/atom+xml;profile=opds-catalog;kind=acquisition" />
+  <entry>
+    <title>Passport to the Cosmos: A New You Tomorrow (Alan Dean Foster Edition) (draft-1020_1404)</title>
+    <id>urn:github:release:misnoma:pttc-epub:draft-1020_1404</id>
+    <updated>2026-10-20T14:04:33Z</updated>
+    <published>2026-10-20T14:04:33Z</published>
+    <author>
+      <name>James Walker Reid &amp; Julian Jahanpour</name>
+    </author>
+    <summary>Compiled draft build draft-1020_1404 containing 7 chapter(s).</summary>
+    <content type="text">Compiled EPUB build containing 7 chapter(s):
+
+- chapter_01.md
+- chapter_02.md
+- chapter_03.md
+- chapter_04.md
+- chapter_05.md
+- chapter_06.md
+- chapter_07.md</content>
+    <link rel="http://opds-spec.org/acquisition" href="https://github.com/misnoma/pttc-epub/releases/download/draft-1020_1404/novel_1020_1404.epub" type="application/epub+zip" title="Download EPUB" />
+    <link rel="http://opds-spec.org/image" href="https://misnoma.github.io/pttc-epub/covers/cover_1020_1404.jpg" type="image/jpeg" />
+    <link rel="http://opds-spec.org/image/thumbnail" href="https://misnoma.github.io/pttc-epub/covers/thumb_1020_1404.jpg" type="image/jpeg" />
+  </entry>
   <entry>
     <title>Passport to the Cosmos: A New You Tomorrow (Frank Herbert Dune Edition) (draft-1020_1352)</title>
     <id>urn:github:release:misnoma:pttc-epub:draft-1020_1352</id>
