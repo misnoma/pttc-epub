@@ -3,7 +3,7 @@
   <id>urn:uuid:pttc-epub-opds-catalog</id>
   <title>Passport to the Cosmos: A New You Tomorrow</title>
   <subtitle>Development builds and compiled EPUB releases</subtitle>
-  <updated>2026-11-01T18:18:56Z</updated>
+  <updated>2026-11-01T18:18:00Z</updated>
   <author>
     <name>James Walker Reid &amp; Julian Jahanpour</name>
     <uri>https://newyoumusical.com</uri>
@@ -13,8 +13,8 @@
   <entry>
     <title>Passport to the Cosmos: A New You Tomorrow (Kurt Vonnegut Edition) (draft-1101_1818)</title>
     <id>urn:github:release:misnoma:pttc-epub:draft-1101_1818</id>
-    <updated>2026-11-01T18:18:56Z</updated>
-    <published>2026-11-01T18:18:56Z</published>
+    <updated>2026-11-01T18:18:00Z</updated>
+    <published>2026-11-01T18:18:00Z</published>
     <author>
       <name>James Walker Reid &amp; Julian Jahanpour</name>
     </author>
